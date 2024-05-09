@@ -1,0 +1,67 @@
+:root
+{
+    --footerheight : 50px;
+}
+
+@font-face {
+    src: url("DNFForgedBlade_TTF/DNFForgedBlade-Medium.ttf");
+    font-family: "blade";
+}
+html, body
+{
+    margin: 0;
+    padding : 0;
+    height: 100%;
+}
+
+#mainText
+{
+    color : white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:  translate(-50%,-50%);
+    font-family: "blade";
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#body-wrapper
+{
+    height: 90vh;
+    min-height: 100%;
+    position: relative;
+}
+#body-content
+{
+    position:relative;
+    height: calc(90vh - var(--footerheight));
+    margin-bottom: var(--footerheight);
+    background-image: url("Redeemer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: var(--footerheight);
+}
+footer
+{
+    width: 100%;
+    height : var(--footerheight);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.footer-img
+{    width: 100%;
+    height: 100%;
+    background-image: url("column_col.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer a
+{
+    display: block;
+    width :100%;
+    height:100%;
+}
