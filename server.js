@@ -24,9 +24,9 @@ app.get('/logout', function(req,res)
 {
     res.send("logout");
 })
-app.get('/main', function(req,res)
+app.get('/home', function(req,res)
 {
-    res.send("main");
+    res.sendFile(__dirname + '/home.html');
 })
 app.get('/search', function(req,res)
 {
